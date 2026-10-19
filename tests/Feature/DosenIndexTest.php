@@ -40,11 +40,19 @@ class DosenIndexTest extends TestCase
         $this->seed();
         $this->seed();
 
-        $this->assertDatabaseCount('dosen', 3);
-        $this->assertDatabaseCount('mata_kuliah', 7);
+        $this->assertDatabaseCount('dosen', 10);
+        $this->assertDatabaseCount('mata_kuliah', 10);
         $this->assertDatabaseHas('mata_kuliah', [
-            'kode' => 'IF101',
-            'dosen_id' => Dosen::where('nidn', '0412345601')->value('id'),
+            'kode' => 'TIF101',
+            'dosen_id' => Dosen::where('nidn', '0012058401')->value('id'),
+        ]);
+        $this->assertDatabaseHas('mata_kuliah', [
+            'kode' => 'SIS201',
+            'dosen_id' => Dosen::where('nidn', '0023118602')->value('id'),
+        ]);
+        $this->assertDatabaseHas('mata_kuliah', [
+            'kode' => 'RPL304',
+            'dosen_id' => Dosen::where('nidn', '0003068110')->value('id'),
         ]);
     }
 }

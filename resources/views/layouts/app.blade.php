@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    @stack('styles')
     <style>
         html, body {
             height: 100%;
@@ -67,13 +68,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('dosen.index') }}" class="nav-link {{ request()->is('getDosen') ? 'active' : '' }}">
+                    <a href="{{ route('dosen.index') }}" class="nav-link {{ request()->is('dosen*') || request()->is('getDosen') ? 'active' : '' }}">
                         <i class="bi bi-person-badge me-2"></i> Dosen
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link {{ request()->is('matakuliah*') ? 'active' : '' }}">
-                        <i class="bi bi-book me-2"></i> Matakuliah
+                    <a href="{{ route('mata-kuliah.index') }}" class="nav-link {{ request()->is('mata-kuliah*') ? 'active' : '' }}">
+                        <i class="bi bi-book me-2"></i> Mata Kuliah
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('pengawas.index') }}" class="nav-link {{ request()->is('pengawas*') ? 'active' : '' }}">
+                        <i class="bi bi-person-check me-2"></i> Pengawas
                     </a>
                 </li>
             </ul>
@@ -85,6 +91,12 @@
 
         <div class="content p-4">
             <div class="container-fluid">
+                @if (session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>
+                    </div>
+                @endif
                 @yield('content')
             </div>
         </div>
@@ -93,5 +105,6 @@
 
     <!-- Bootstrap 5 JS Bundle CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    @stack('scripts')
 </body>
 </html>

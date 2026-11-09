@@ -68,6 +68,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('mahasiswa-api.index') }}" class="nav-link {{ request()->is('mahasiswa-api*') ? 'active' : '' }}">
+                        <i class="bi bi-cloud-arrow-down me-2"></i> Mahasiswa (REST API)
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('dosen.index') }}" class="nav-link {{ request()->is('dosen*') || request()->is('getDosen') ? 'active' : '' }}">
                         <i class="bi bi-person-badge me-2"></i> Dosen
                     </a>

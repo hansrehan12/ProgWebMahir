@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Uji 4 - POST Validasi Gagal (422)</title>
+<style>
+  body { margin:0; font-family: Segoe UI, Arial, sans-serif; background:#0f172a; color:#e2e8f0; }
+  .wrap { padding:24px; }
+  .badge { display:inline-block; padding:6px 12px; border-radius:6px; font-weight:700; background:#b45309; color:white; margin-right:8px; }
+  .method { display:inline-block; padding:6px 10px; border-radius:6px; background:#334155; font-weight:700; }
+  h1 { font-size:20px; margin:16px 0 8px; }
+  .url { font-family: Consolas, monospace; background:#1e293b; padding:10px 12px; border-radius:8px; margin:12px 0; word-break:break-all; }
+  .label { color:#94a3b8; font-size:12px; text-transform:uppercase; letter-spacing:.04em; margin:16px 0 6px; }
+  pre.box { background:#020617; border:1px solid #334155; border-radius:8px; padding:14px; white-space:pre-wrap; word-break:break-word; font-family: Consolas, monospace; font-size:13px; line-height:1.45; }
+  .meta { color:#94a3b8; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="meta">Pengujian Manual REST API Mahasiswa — Thunder Client Style Capture</div>
+  <h1>Skenario 4: POST Validasi Gagal (422)</h1>
+  <div>
+    <span class="method">POST</span>
+    <span class="badge">HTTP 422</span>
+  </div>
+  <div class="url">http://127.0.0.1:8000/api/mahasiswa</div>
+  <div class='label'>Request Body</div><pre class='box'>{
+    "nim":  "240001",
+    "email":  "bukan-email"
+}</pre>
+  <div class="label">Response JSON</div>
+  <pre class="box">{
+    "message":  "NIM sudah terdaftar. (and 3 more errors)",
+    "errors":  {
+                   "nim":  [
+                               "NIM sudah terdaftar."
+                           ],
+                   "nama":  [
+                                "Nama mahasiswa wajib diisi."
+                            ],
+                   "prodi":  [
+                                 "Program studi wajib diisi."
+                             ],
+                   "email":  [
+                                 "Format email tidak valid."
+                             ]
+               }
+}</pre>
+</div>
+</body>
+</html>

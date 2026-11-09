@@ -39,3 +39,5 @@ Route::delete('dosen/{id}/force-delete', [DosenController::class, 'forceDelete']
 Route::resource('dosen', DosenController::class);
 Route::resource('mata-kuliah', MataKuliahController::class);
 Route::resource('pengawas', PengawasController::class)->parameters(['pengawas' => 'pengawas']);
+
+Route::view('/mahasiswa-api', 'mahasiswa-api.index')->name('mahasiswa-api.index');

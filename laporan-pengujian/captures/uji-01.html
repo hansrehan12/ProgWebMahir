@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Uji 1 - GET Daftar Mahasiswa</title>
+<style>
+  body { margin:0; font-family: Segoe UI, Arial, sans-serif; background:#0f172a; color:#e2e8f0; }
+  .wrap { padding:24px; }
+  .badge { display:inline-block; padding:6px 12px; border-radius:6px; font-weight:700; background:#15803d; color:white; margin-right:8px; }
+  .method { display:inline-block; padding:6px 10px; border-radius:6px; background:#334155; font-weight:700; }
+  h1 { font-size:20px; margin:16px 0 8px; }
+  .url { font-family: Consolas, monospace; background:#1e293b; padding:10px 12px; border-radius:8px; margin:12px 0; word-break:break-all; }
+  .label { color:#94a3b8; font-size:12px; text-transform:uppercase; letter-spacing:.04em; margin:16px 0 6px; }
+  pre.box { background:#020617; border:1px solid #334155; border-radius:8px; padding:14px; white-space:pre-wrap; word-break:break-word; font-family: Consolas, monospace; font-size:13px; line-height:1.45; }
+  .meta { color:#94a3b8; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="meta">Pengujian Manual REST API Mahasiswa — Thunder Client Style Capture</div>
+  <h1>Skenario 1: GET Daftar Mahasiswa</h1>
+  <div>
+    <span class="method">GET</span>
+    <span class="badge">HTTP 200</span>
+  </div>
+  <div class="url">http://127.0.0.1:8000/api/mahasiswa?per_page=2</div>
+  
+  <div class="label">Response JSON</div>
+  <pre class="box">{
+    "data":  [
+                 {
+                     "id":  36,
+                     "nim":  "241425",
+                     "nama":  "Amara Gorczany",
+                     "prodi":  "Teknik Informatika",
+                     "email":  "nick.harber@example.org",
+                     "nohp":  "089881592980",
+                     "created_at":  "2026-11-09 08:28:31",
+                     "updated_at":  "2026-11-09 08:28:31"
+                 },
+                 {
+                     "id":  51,
+                     "nim":  "240001",
+                     "nama":  "Andi",
+                     "prodi":  "Informatika",
+                     "email":  "andi@gmail.com",
+                     "nohp":  "081287878787",
+                     "created_at":  "2026-11-09 08:28:31",
+                     "updated_at":  "2026-11-09 08:28:31"
+                 }
+             ],
+    "links":  {
+                  "first":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=1",
+                  "last":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=26",
+                  "prev":  null,
+                  "next":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=2"
+              },
+    "meta":  {
+                 "current_page":  1,
+                 "from":  1,
+                 "last_page":  26,
+                 "links":  [
+                               {
+                                   "url":  null,
+                                   "label":  "\u0026laquo; Previous",
+                                   "page":  null,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=1",
+                                   "label":  "1",
+                                   "page":  1,
+                                   "active":  true
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=2",
+                                   "label":  "2",
+                                   "page":  2,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=3",
+                                   "label":  "3",
+                                   "page":  3,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=4",
+                                   "label":  "4",
+                                   "page":  4,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=5",
+                                   "label":  "5",
+                                   "page":  5,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=6",
+                                   "label":  "6",
+                                   "page":  6,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=7",
+                                   "label":  "7",
+                                   "page":  7,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=8",
+                                   "label":  "8",
+                                   "page":  8,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=9",
+                                   "label":  "9",
+                                   "page":  9,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=10",
+                                   "label":  "10",
+                                   "page":  10,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  null,
+                                   "label":  "...",
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=25",
+                                   "label":  "25",
+                                   "page":  25,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=26",
+                                   "label":  "26",
+                                   "page":  26,
+                                   "active":  false
+                               },
+                               {
+                                   "url":  "http://127.0.0.1:8000/api/mahasiswa?per_page=2\u0026page=2",
+                                   "label":  "Next \u0026raquo;",
+                                   "page":  2,
+                                   "active":  false
+                               }
+                           ],
+                 "path":  "http://127.0.0.1:8000/api/mahasiswa",
+                 "per_page":  2,
+                 "to":  2,
+                 "total":  51
+             }
+}</pre>
+</div>
+</body>
+</html>

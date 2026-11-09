@@ -1,0 +1,82 @@
+﻿[
+    {
+        "no":  1,
+        "title":  "GET Daftar Mahasiswa",
+        "method":  "GET",
+        "url":  "/api/mahasiswa?per_page=2",
+        "code":  "200",
+        "body":  "{\r\n    \"data\":  [\r\n                 {\r\n                     \"id\":  36,\r\n                     \"nim\":  \"241425\",\r\n                     \"nama\":  \"Amara Gorczany\",\r\n                     \"prodi\":  \"Teknik Informatika\",\r\n                     \"email\":  \"nick.harber@example.org\",\r\n                     \"nohp\":  \"089881592980\",\r\n                     \"created_at\":  \"2026-11-09 08:28:31\",\r\n                     \"updated_at\":  \"2026-11-09 08:28:31\"\r\n                 },\r\n                 {\r\n                     \"id\":  51,\r\n                     \"nim\":  \"240001\",\r\n                     \"nama\":  \"Andi\",\r\n                     \"prodi\":  \"Informatika\",\r\n                     \"email\":  \"andi@gmail.com\",\r\n                     \"nohp\":  \"081287878787\",\r\n                     \"created_at\":  \"2026-11-09 08:28:31\",\r\n                     \"updated_at\":  \"2026-11-09 08:28:31\"\r\n                 }\r\n             ],\r\n    \"links\":  {\r\n                  \"first\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=1\",\r\n                  \"last\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=26\",\r\n                  \"prev\":  null,\r\n                  \"next\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=2\"\r\n              },\r\n    \"meta\":  {\r\n                 \"current_page\":  1,\r\n                 \"from\":  1,\r\n                 \"last_page\":  26,\r\n                 \"links\":  [\r\n                               {\r\n                                   \"url\":  null,\r\n                                   \"label\":  \"\\u0026laquo; Previous\",\r\n                                   \"page\":  null,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=1\",\r\n                                   \"label\":  \"1\",\r\n                                   \"page\":  1,\r\n                                   \"active\":  true\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=2\",\r\n                                   \"label\":  \"2\",\r\n                                   \"page\":  2,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=3\",\r\n                                   \"label\":  \"3\",\r\n                                   \"page\":  3,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=4\",\r\n                                   \"label\":  \"4\",\r\n                                   \"page\":  4,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=5\",\r\n                                   \"label\":  \"5\",\r\n                                   \"page\":  5,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=6\",\r\n                                   \"label\":  \"6\",\r\n                                   \"page\":  6,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=7\",\r\n                                   \"label\":  \"7\",\r\n                                   \"page\":  7,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=8\",\r\n                                   \"label\":  \"8\",\r\n                                   \"page\":  8,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=9\",\r\n                                   \"label\":  \"9\",\r\n                                   \"page\":  9,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=10\",\r\n                                   \"label\":  \"10\",\r\n                                   \"page\":  10,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  null,\r\n                                   \"label\":  \"...\",\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=25\",\r\n                                   \"label\":  \"25\",\r\n                                   \"page\":  25,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=26\",\r\n                                   \"label\":  \"26\",\r\n                                   \"page\":  26,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?per_page=2\\u0026page=2\",\r\n                                   \"label\":  \"Next \\u0026raquo;\",\r\n                                   \"page\":  2,\r\n                                   \"active\":  false\r\n                               }\r\n                           ],\r\n                 \"path\":  \"http://127.0.0.1:8000/api/mahasiswa\",\r\n                 \"per_page\":  2,\r\n                 \"to\":  2,\r\n                 \"total\":  51\r\n             }\r\n}",
+        "explain":  "Pengujian pengambilan daftar mahasiswa dengan pagination (per_page=2). API mengembalikan status 200 beserta struktur data, links, dan meta.",
+        "reqBody":  null
+    },
+    {
+        "no":  2,
+        "title":  "GET Pencarian Mahasiswa",
+        "method":  "GET",
+        "url":  "/api/mahasiswa?search=andi",
+        "code":  "200",
+        "body":  "{\r\n    \"data\":  [\r\n                 {\r\n                     \"id\":  51,\r\n                     \"nim\":  \"240001\",\r\n                     \"nama\":  \"Andi\",\r\n                     \"prodi\":  \"Informatika\",\r\n                     \"email\":  \"andi@gmail.com\",\r\n                     \"nohp\":  \"081287878787\",\r\n                     \"created_at\":  \"2026-11-09 08:28:31\",\r\n                     \"updated_at\":  \"2026-11-09 08:28:31\"\r\n                 }\r\n             ],\r\n    \"links\":  {\r\n                  \"first\":  \"http://127.0.0.1:8000/api/mahasiswa?search=andi\\u0026page=1\",\r\n                  \"last\":  \"http://127.0.0.1:8000/api/mahasiswa?search=andi\\u0026page=1\",\r\n                  \"prev\":  null,\r\n                  \"next\":  null\r\n              },\r\n    \"meta\":  {\r\n                 \"current_page\":  1,\r\n                 \"from\":  1,\r\n                 \"last_page\":  1,\r\n                 \"links\":  [\r\n                               {\r\n                                   \"url\":  null,\r\n                                   \"label\":  \"\\u0026laquo; Previous\",\r\n                                   \"page\":  null,\r\n                                   \"active\":  false\r\n                               },\r\n                               {\r\n                                   \"url\":  \"http://127.0.0.1:8000/api/mahasiswa?search=andi\\u0026page=1\",\r\n                                   \"label\":  \"1\",\r\n                                   \"page\":  1,\r\n                                   \"active\":  true\r\n                               },\r\n                               {\r\n                                   \"url\":  null,\r\n                                   \"label\":  \"Next \\u0026raquo;\",\r\n                                   \"page\":  null,\r\n                                   \"active\":  false\r\n                               }\r\n                           ],\r\n                 \"path\":  \"http://127.0.0.1:8000/api/mahasiswa\",\r\n                 \"per_page\":  10,\r\n                 \"to\":  1,\r\n                 \"total\":  1\r\n             }\r\n}",
+        "explain":  "Pengujian fitur pencarian menggunakan query search=andi. Status 200 dan hanya data yang cocok yang ditampilkan.",
+        "reqBody":  null
+    },
+    {
+        "no":  3,
+        "title":  "POST Tambah Data Baru",
+        "method":  "POST",
+        "url":  "/api/mahasiswa",
+        "code":  "201",
+        "body":  "{\r\n    \"data\":  {\r\n                 \"id\":  54,\r\n                 \"nim\":  \"241151551\",\r\n                 \"nama\":  \"Raihan Pratama\",\r\n                 \"prodi\":  \"Sistem Informasi\",\r\n                 \"email\":  \"raihan.api@example.com\",\r\n                 \"nohp\":  \"081234567890\",\r\n                 \"created_at\":  \"2026-11-09 08:51:04\",\r\n                 \"updated_at\":  \"2026-11-09 08:51:04\"\r\n             },\r\n    \"message\":  \"Data mahasiswa berhasil ditambahkan.\"\r\n}",
+        "explain":  "Pengujian penambahan data baru melalui webservice. Data NIM 241151551 atas nama Raihan Pratama berhasil ditambahkan. Status 201 Created.",
+        "reqBody":  "{\"nim\":\"241151551\",\"nama\":\"Raihan Pratama\",\"prodi\":\"Sistem Informasi\",\"email\":\"raihan.api@example.com\",\"nohp\":\"081234567890\"}"
+    },
+    {
+        "no":  4,
+        "title":  "POST Validasi Gagal (422)",
+        "method":  "POST",
+        "url":  "/api/mahasiswa",
+        "code":  "422",
+        "body":  "{\r\n    \"message\":  \"NIM sudah terdaftar. (and 3 more errors)\",\r\n    \"errors\":  {\r\n                   \"nim\":  [\r\n                               \"NIM sudah terdaftar.\"\r\n                           ],\r\n                   \"nama\":  [\r\n                                \"Nama mahasiswa wajib diisi.\"\r\n                            ],\r\n                   \"prodi\":  [\r\n                                 \"Program studi wajib diisi.\"\r\n                             ],\r\n                   \"email\":  [\r\n                                 \"Format email tidak valid.\"\r\n                             ]\r\n               }\r\n}",
+        "explain":  "Pengujian validasi input tidak valid (NIM duplikat, nama/prodi kosong, email salah). API menolak dengan status 422 dan menampilkan errors per field.",
+        "reqBody":  "{\"nim\":\"240001\",\"email\":\"bukan-email\"}"
+    },
+    {
+        "no":  5,
+        "title":  "GET Detail ID 54",
+        "method":  "GET",
+        "url":  "/api/mahasiswa/54",
+        "code":  "200",
+        "body":  "{\r\n    \"data\":  {\r\n                 \"id\":  54,\r\n                 \"nim\":  \"241151551\",\r\n                 \"nama\":  \"Raihan Pratama\",\r\n                 \"prodi\":  \"Sistem Informasi\",\r\n                 \"email\":  \"raihan.api@example.com\",\r\n                 \"nohp\":  \"081234567890\",\r\n                 \"created_at\":  \"2026-11-09 08:51:04\",\r\n                 \"updated_at\":  \"2026-11-09 08:51:04\"\r\n             }\r\n}",
+        "explain":  "Pengujian detail mahasiswa berdasarkan ID hasil penambahan data baru. Status 200 dan data lengkap dikembalikan.",
+        "reqBody":  null
+    },
+    {
+        "no":  6,
+        "title":  "GET Data Tidak Ditemukan (404)",
+        "method":  "GET",
+        "url":  "/api/mahasiswa/99999",
+        "code":  "404",
+        "body":  "{\r\n    \"message\":  \"Data tidak ditemukan.\"\r\n}",
+        "explain":  "Pengujian error handling ketika ID tidak ada. API mengembalikan status 404 dengan pesan Data tidak ditemukan.",
+        "reqBody":  null
+    },
+    {
+        "no":  7,
+        "title":  "PUT Ubah Data ID 54",
+        "method":  "PUT",
+        "url":  "/api/mahasiswa/54",
+        "code":  "200",
+        "body":  "{\r\n    \"data\":  {\r\n                 \"id\":  54,\r\n                 \"nim\":  \"241151551\",\r\n                 \"nama\":  \"Raihan Pratama (Updated)\",\r\n                 \"prodi\":  \"Teknik Informatika\",\r\n                 \"email\":  \"raihan.api@example.com\",\r\n                 \"nohp\":  \"081234567890\",\r\n                 \"created_at\":  \"2026-11-09 08:51:04\",\r\n                 \"updated_at\":  \"2026-11-09 08:51:04\"\r\n             },\r\n    \"message\":  \"Data mahasiswa berhasil diperbarui.\"\r\n}",
+        "explain":  "Pengujian mengubah data mahasiswa. Status 200 dan pesan berhasil diperbarui ditampilkan.",
+        "reqBody":  "{\"nim\":\"241151551\",\"nama\":\"Raihan Pratama (Updated)\",\"prodi\":\"Teknik Informatika\",\"email\":\"raihan.api@example.com\",\"nohp\":\"081234567890\"}"
+    },
+    {
+        "no":  8,
+        "title":  "DELETE Hapus Data ID 55",
+        "method":  "DELETE",
+        "url":  "/api/mahasiswa/55",
+        "code":  "200",
+        "body":  "{\r\n    \"message\":  \"Data mahasiswa berhasil dihapus.\"\r\n}",
+        "explain":  "Pengujian menghapus data mahasiswa. Status 200 dengan pesan Data mahasiswa berhasil dihapus.",
+        "reqBody":  null
+    }
+]

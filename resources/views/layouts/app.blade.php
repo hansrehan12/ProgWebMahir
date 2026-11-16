@@ -73,8 +73,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('dosen.index') }}" class="nav-link {{ request()->is('dosen*') || request()->is('getDosen') ? 'active' : '' }}">
+                    <a href="{{ route('dosen.index') }}" class="nav-link {{ request()->is('dosen') || request()->is('dosen/*') || request()->is('getDosen') ? 'active' : '' }}">
                         <i class="bi bi-person-badge me-2"></i> Dosen
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('dosen-api.index') }}" class="nav-link {{ request()->is('dosen-api*') ? 'active' : '' }}">
+                        <i class="bi bi-cloud-arrow-down me-2"></i> Dosen (REST API)
                     </a>
                 </li>
                 <li>

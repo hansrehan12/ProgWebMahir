@@ -41,3 +41,4 @@ Route::resource('mata-kuliah', MataKuliahController::class);
 Route::resource('pengawas', PengawasController::class)->parameters(['pengawas' => 'pengawas']);
 
 Route::view('/mahasiswa-api', 'mahasiswa-api.index')->name('mahasiswa-api.index');
+Route::view('/dosen-api', 'dosen-api.index')->name('dosen-api.index');

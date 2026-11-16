@@ -13,6 +13,8 @@ return new class extends Migration
             $table->string('nidn', 20)->unique();
             $table->string('nama', 100);
             $table->string('prodi', 100);
+            $table->string('email', 100)->nullable();
+            $table->string('nohp', 20)->nullable();
             $table->timestamps();
         });
     }

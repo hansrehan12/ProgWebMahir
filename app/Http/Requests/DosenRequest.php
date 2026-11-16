@@ -14,16 +14,19 @@ class DosenRequest extends FormRequest
 
     public function rules(): array
     {
-        $nidnRule = Rule::unique('dosen', 'nidn');
-
-        if ($this->route('dosen')) {
-            $nidnRule->ignore($this->route('dosen'));
-        }
+        $dosen = $this->route('dosen');
 
         return [
-            'nidn' => ['required', 'string', 'max:20', $nidnRule],
+            'nidn' => [
+                'required',
+                'string',
+                'max:20',
+                Rule::unique('dosen', 'nidn')->ignore($dosen?->id ?? $dosen),
+            ],
             'nama' => ['required', 'string', 'max:100'],
             'prodi' => ['required', 'string', 'max:100'],
+            'email' => ['nullable', 'email', 'max:100'],
+            'nohp' => ['nullable', 'string', 'max:20'],
         ];
     }
 
@@ -36,6 +39,9 @@ class DosenRequest extends FormRequest
             'nama.required' => 'Nama dosen wajib diisi.',
             'nama.max' => 'Nama maksimal 100 karakter.',
             'prodi.required' => 'Program studi wajib diisi.',
+            'email.email' => 'Format email tidak valid.',
+            'email.max' => 'Email maksimal 100 karakter.',
+            'nohp.max' => 'Nomor HP maksimal 20 karakter.',
         ];
     }
 }

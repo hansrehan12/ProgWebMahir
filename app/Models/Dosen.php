@@ -16,6 +16,8 @@ class Dosen extends Model
         'nidn',
         'nama',
         'prodi',
+        'email',
+        'nohp',
     ];
 
     public function mataKuliah(): HasMany
